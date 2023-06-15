@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Agrihub</string>
+    <string name="title">Agrihub.AI</string>
+    <string name="nitrogen">N</string>
+    <string name="phosphorus">P</string>
+    <string name="kallium">K</string>
+    <string name="temperature">Suhu</string>
+    <string name="humidity">Kelembapan</string>
+    <string name="resistivitas">Resistivitas</string>
+    <string name="cek">CEK</string>
+    <string name="result">Rekomendasi</string>
+    <string name="masukan_jumlah_kelembaban">Masukan Jumlah Kelembaban</string>
+    <string name="masukan_jumlah_suhu">Masukan Jumlah Suhu</string>
+    <string name="hasil">Hasil</string>
+</resources>

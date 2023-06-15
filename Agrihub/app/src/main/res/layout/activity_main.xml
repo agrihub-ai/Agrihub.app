@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greentea"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/a_1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/logo"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nitrogen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/nitrogen"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/n"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Masukan Jumlah Nitrogen"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingLeft="10sp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nitrogen"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/phosphorus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/phosphorus"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/n"
+        app:layout_constraintTop_toBottomOf="@+id/n"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Masukan Jumlah Phosphorus"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingLeft="10sp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/phosphorus"
+        app:layout_constraintTop_toBottomOf="@+id/phosphorus"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/kallium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/kallium"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/p"
+        app:layout_constraintTop_toBottomOf="@+id/p"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/k"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Masukan Jumlah Kallium"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingLeft="10sp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/kallium"
+        app:layout_constraintTop_toBottomOf="@+id/kallium"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resistivitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/resistivitas"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/k"
+        app:layout_constraintTop_toBottomOf="@+id/k"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/resist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Masukan Jumlah Resistivitas"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingLeft="10sp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/resistivitas"
+        app:layout_constraintTop_toBottomOf="@+id/resistivitas"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/suhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/temperature"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/resist"
+        app:layout_constraintTop_toBottomOf="@+id/resist"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/masukan_jumlah_suhu"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingStart="10sp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/suhu"
+        app:layout_constraintTop_toBottomOf="@+id/suhu"
+        tools:ignore="MissingConstraints,RtlSymmetry"
+        />
+
+    <TextView
+        android:id="@+id/kelembaban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/humidity"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/temp"
+        app:layout_constraintTop_toBottomOf="@+id/temp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/humid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/masukan_jumlah_kelembaban"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingStart="10sp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/kelembaban"
+        app:layout_constraintTop_toBottomOf="@+id/kelembaban"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/cek"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:theme="@style/buttonstyle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="@+id/humid"
+        app:layout_constraintTop_toBottomOf="@+id/humid" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
